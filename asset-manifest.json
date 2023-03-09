@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ThiefStore/static/css/main.93f4fdd6.css",
+    "main.js": "/ThiefStore/static/js/main.3934a6b5.js",
+    "static/js/787.dcc73137.chunk.js": "/ThiefStore/static/js/787.dcc73137.chunk.js",
+    "static/media/logo.svg": "/ThiefStore/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ThiefStore/index.html",
+    "main.93f4fdd6.css.map": "/ThiefStore/static/css/main.93f4fdd6.css.map",
+    "main.3934a6b5.js.map": "/ThiefStore/static/js/main.3934a6b5.js.map",
+    "787.dcc73137.chunk.js.map": "/ThiefStore/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93f4fdd6.css",
+    "static/js/main.3934a6b5.js"
+  ]
+}
