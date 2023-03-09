@@ -1,0 +1,32 @@
+.hot{
+    background-color: #067d90;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hot h1{
+    color: white;
+    font-size: 38px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    letter-spacing: 1.9px;  
+   text-shadow: 1.0px 0.8px  white;
+
+}
+.all-items{
+    display: flex;
+}
+.smart-items{
+    height: 50vh;
+    width: 50%;
+}
+.smart-items .carousel-control-prev{
+    /* display: none; */
+}
+.smart-items .carousel-control-next{
+    /* display: none; */
+}
+.smart-items img{
+    height: 45vh;
+}

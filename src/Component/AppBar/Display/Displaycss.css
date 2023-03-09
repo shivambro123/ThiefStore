@@ -1,0 +1,32 @@
+.wrapper{
+    margin: 20px 0;
+    height:50vh;
+    width: 100%;
+    display: flex;
+    
+}
+.data{
+    height: 50vh;
+    padding: 10px;
+    background-color: rgba(247, 242, 242, 0.712);
+    width: 100%;
+    max-width: 20%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.data h3{
+    text-align: left;
+    font-size: 23px;
+  
+}
+.inner-div{
+    height: 16vh;
+    width: 50%;
+    margin: auto;
+}
+.inner-div img{
+    height: 100%;
+    width: 100%;
+}

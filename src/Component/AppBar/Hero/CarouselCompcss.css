@@ -1,0 +1,8 @@
+.image{
+    height: 80vh;
+    width: auto;
+    margin: 20px 0;
+}
+.carousel-indicators{
+    display: none;
+}

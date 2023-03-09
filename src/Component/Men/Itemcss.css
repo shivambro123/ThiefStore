@@ -1,0 +1,21 @@
+.item-div{
+    height: 60vh;
+    width: 100%;
+    max-width: 24%;
+    margin: auto;  
+}
+.item{
+    height:40vh;
+    width: 100%;
+}
+.item .images{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
