@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap'
+import Button from '@mui/material/Button';
 import React from 'react'
 import './Itemcss.css'
 import { useContext } from 'react'
@@ -20,7 +20,7 @@ const Item = ({src,title,price,product}) => {
            <div>Title:{title} <br/></div> 
            <div>Price:{price}&#8377;</div>
         </div>
-        <button className='btn btn-light' onClick={()=>{dispatch({type:'addTask',payload:product,price:price})}}>Add To Cart</button>
+        <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:product,price:price})}}>Add To Cart</Button>
         </div>
     </>
   )

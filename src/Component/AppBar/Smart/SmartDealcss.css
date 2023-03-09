@@ -22,10 +22,10 @@
     width: 50%;
 }
 .smart-items .carousel-control-prev{
-    /* display: none; */
+    display: none;
 }
 .smart-items .carousel-control-next{
-    /* display: none; */
+    display: none;
 }
 .smart-items img{
     height: 45vh;

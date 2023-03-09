@@ -1,5 +1,16 @@
+.wrapper-main{
+    
+}
 .main-wrapper{
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.875rem;
+}
+.filter-div{
+    height: 10vh;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,8 +1,10 @@
 .item-div{
-    height: 60vh;
+    height: 54vh;
     width: 100%;
     max-width: 24%;
-    margin: auto;  
+    margin: 10px auto;  
+    background-color: rgb(246, 241, 235);
+    border-radius: 12px;
 }
 .item{
     height:40vh;

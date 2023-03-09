@@ -20,6 +20,7 @@ function App() {
       <AppBarComp/>
         <Routes>
           <Route path='/' element={<MainPage/>}/>
+          <Route path='/ThiefStore' element={<MainPage/>}/>
           <Route path="/smartphones" element={<Men/>}/>
           <Route path="/laptop" element={<Women/>}/>
           <Route path="/natural" element={<NaturalComp/>}/>

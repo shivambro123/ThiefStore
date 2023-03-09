@@ -1,5 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
+import Button from '@mui/material/Button';
 import { DataContext } from '../AppBar/Context/ContextComp'
 import './Cartcss.css'
 
@@ -26,7 +27,7 @@ const Cart = ({product}) => {
                <div>Title:{val.title} <br/></div> 
                <div>Price:{val.price} &#8377;</div>
             </div>
-            <button className='btn btn-light' onClick={()=>{dispatch({type:'removeTask',payload:product,index:ind,price:val.price})}}>Remove</button>
+            <Button variant="contained" size="medium" onClick={()=>{dispatch({type:'removeTask',payload:product,index:ind,price:val.price})}}>Remove</Button>
             </div>
         )
        })}
