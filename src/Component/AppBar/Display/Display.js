@@ -10,7 +10,7 @@ const Display = () => {
     console.log(store)
     const navigate= useNavigate();
   return (
-    <div>
+    <>
         <div className='wrapper'>
         <div className='data' onClick={()=>{navigate('/smartphones')}}>
        <div><h3>Smart phones</h3></div>
@@ -88,7 +88,7 @@ const Display = () => {
         </div>
         </div>
 
-    </div>
+    </>
   )
 }
 

@@ -16,3 +16,12 @@
 .footer-div ul li:nth-child(1){
     opacity: 1;
 }
+
+@media screen and (min-width:320px) and (max-width:420px){
+    .footer-wrapper{
+        height: auto;
+    }
+    .footer-div{
+        margin: 10px auto;
+    }
+}

@@ -7,14 +7,14 @@ import TodayDeal from '../Todays/TodayDeal'
 
 const MainPage = () => {
   return (
-    <div>
+    <>
         <CarouselComp/>
         <SmartDeal/>
         <TodayDeal/>
        <Display/>
        <Footer/>
 
-    </div>
+    </>
   )
 }
 
