@@ -1,0 +1,24 @@
+.view{
+    height: 100vh;
+    width: 100%;
+    padding: 0 80px;
+
+}
+.view-item{
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+}
+.img-div{
+   height: 70vh;
+   width: auto;
+
+   position: center center;
+}
+.desc{
+    width: 40%;
+    height: 20vh;
+    padding-left: 20px;
+    text-align: left;
+    border-left: 1px solid;
+}

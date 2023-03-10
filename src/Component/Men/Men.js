@@ -16,16 +16,36 @@ const Men = () => {
     <>
     <div className='wrapper-main'>
         <div className='filter-div'>
-        <select onChange={changeHandler}>
+            <label className="mx-4" >Prices:</label>
+        <select onChange={changeHandler} style={{width:'10%'}}>
             <option value="all">show all</option>
             <option value="low">Low To High</option>
             <option value="high">High To Low</option>
+    </select>
+
+            <label className="mx-4" >Brand:</label>
+            <select onChange={changeHandler} style={{width:'10%'}}>
+            <option value="all">show all</option>
+            <option value="apple">Apple</option>
+            <option value="oppo">OPPO</option>
+            <option value="samsung">Samsung</option>
             </select>
         </div>
       <div className='main-wrapper '>
         {
             store.filter((ele)=>{
-                return (ele.category=="smartphones")
+                if(checked=="apple"){
+                return (ele.category=="smartphones" && ele.brand=="Apple")
+                }
+                else if(checked=="oppo"){
+                    return (ele.category=="smartphones" && ele.brand=="OPPO")
+                    }
+                    else if(checked=="samsung"){
+                        return (ele.category=="smartphones" && ele.brand=="Samsung")
+                        }
+                        else{
+                            return (ele.category=="smartphones")
+                        }
             }).sort((a,b)=>{
                  if(checked=="low"){
                     return a.price - b.price

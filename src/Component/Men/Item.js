@@ -3,14 +3,20 @@ import React from 'react'
 import './Itemcss.css'
 import { useContext } from 'react'
 import { DataContext } from '../AppBar/Context/ContextComp'
+import { useNavigate } from 'react-router-dom';
 
 const Item = ({src,title,price,product}) => {
+  const navigate = useNavigate()
     const {state,dispatch}=useContext(DataContext)
-    console.log(product)
+   
+     const viewHandler = () =>{
+      dispatch({type:'viewData',data:product})
+      navigate('/view')
+    }
   return (
     <>
         <div className='item-div'>
-        <div className='item'>
+        <div className='item' onClick={viewHandler}>
             <img
             src={src}
             className="images"

@@ -4,8 +4,8 @@ import { useContext } from 'react';
 import './CarouselCompcss.css'
 import { DataContext } from '../Context/ContextComp';
 
+function CarouselComp({product,viewHandler}) {
 
-function CarouselComp() {
   const {state,dispatch,store} = useContext(DataContext)
  
     console.log(store)
@@ -13,10 +13,10 @@ function CarouselComp() {
   return (
     <>
 <div className='mt-1'>
-    <Carousel variant="dark">
+    <Carousel variant="dark" >
       {
         store.map((ele)=>{
-          return  <Carousel.Item>
+          return  <Carousel.Item style={{cursor:'pointer'}} >
           <img
             className="d-inlineblock w-80 image"
             src={ele.thumbnail}

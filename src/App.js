@@ -11,6 +11,7 @@ import Women from './Component/Women/Women';
 import NaturalComp from './Component/Natural/NaturalComp';
 import Grocery from './Component/Grocery/Grocery';
 import Cart from './Component/Cart/Cart';
+import View from './Component/ViewData/View';
 function App() {
   console.log('hh ')
   return (
@@ -19,14 +20,14 @@ function App() {
       <Router>
       <AppBarComp/>
         <Routes>
-          <Route path='/' element={<MainPage/>}/>
+          <Route path='/' element={ <MainPage/>}/>
           <Route path='/ThiefStore' element={<MainPage/>}/>
           <Route path="/smartphones" element={<Men/>}/>
           <Route path="/laptop" element={<Women/>}/>
           <Route path="/natural" element={<NaturalComp/>}/>
           <Route path="/grocery" element={<Grocery/>}/>
           <Route path="/cart" element={<Cart/>}/>
-          
+          <Route path="/view" element={<View/>}/>
     </Routes>
     </Router>
     </ContextComp>  

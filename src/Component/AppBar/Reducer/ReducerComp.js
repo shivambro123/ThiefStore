@@ -1,4 +1,3 @@
-import { act } from "react-dom/test-utils"
 
 export const reducer = (state,action)=>{
     switch(action.type){
@@ -16,11 +15,16 @@ export const reducer = (state,action)=>{
                     count:state.count-1,
                     total:state.total-(+(action.price))
                 }
-               
 
+            case 'viewData':
+                return{
+                    view:action.data,
+                    
+                }
+               
         default:
             return state
     }
-    console.log(state.count)
+  
 
 }

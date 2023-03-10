@@ -10,7 +10,8 @@ const Cart = ({product}) => {
     console.log(state.task)
     console.log(state.task)
     console.log(state.total)
-  return (
+    
+    return (
     <div>
        Count:{state.count}
        <div className='cart-wrapper'>

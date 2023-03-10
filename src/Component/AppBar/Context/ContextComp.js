@@ -8,8 +8,10 @@ const ContextComp = ({children}) => {
     const initialState = {
         count:0,
         task:[],
-        total:0
+        total:0,
+        view:{}
     }
+    
     const [store,setStore]=useState([])
     useEffect(()=>{
         fetch('https://dummyjson.com/products')
@@ -17,6 +19,7 @@ const ContextComp = ({children}) => {
         .then(data=>setStore(data.products))
     },[])
     const [state,dispatch]=useReducer(reducer,initialState)
+
   return (
     <div>
         <DataContext.Provider value={{state,dispatch,store}}>
