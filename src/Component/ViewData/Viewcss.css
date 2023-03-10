@@ -1,7 +1,7 @@
 .view{
     height: 100vh;
     width: 100%;
-    padding: 0 80px;
+    padding: 0 60px;
 
 }
 .view-item{
@@ -12,7 +12,6 @@
 .img-div{
    height: 70vh;
    width: auto;
-
    position: center center;
 }
 .desc{
@@ -21,4 +20,19 @@
     padding-left: 20px;
     text-align: left;
     border-left: 1px solid;
+}
+
+@media screen and (max-width:480px){
+    .view{
+        padding: 0 20px;
+    }
+    .img-div{
+        height: 50vh;
+        width: 100%;
+    }
+    .desc{
+        width: 100%;
+        height: auto;
+       margin-bottom: 20px;
+    }
 }

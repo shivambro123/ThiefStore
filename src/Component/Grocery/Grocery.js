@@ -8,7 +8,7 @@ const Grocery = () => {
     const {state,dispatch,store}=useContext(DataContext)
   return (
     <div>
-        <div className='main-wrapper px-5'>
+        <div className='main-wrapper'>
         {
             store.filter((ele)=>{
                 return (ele.category=="groceries")

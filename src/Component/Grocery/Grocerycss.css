@@ -2,4 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.875rem;
+    padding: 0 40px;
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .main-wrapper{
+        padding: 0 20px;
+    }
 }

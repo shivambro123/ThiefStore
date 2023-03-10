@@ -11,7 +11,7 @@ const NaturalComp = () => {
     }
   return (
     <div>
-        <div className='main-wrapper px-5'>
+        <div className='main-wrapper '>
         <div className='filter-div'>
         <select onChange={changeHandler} style={{width:'10%'}}>
             <option value="all">show all</option>

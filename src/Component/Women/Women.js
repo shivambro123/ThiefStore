@@ -12,7 +12,7 @@ const Women = () => {
     }
   return (
     <div>
-        <div className='main-wrapper px-5'>
+        <div className='main-wrapper'>
         <div className='filter-div'>
         <label className="mx-4" >Prices:</label>
 

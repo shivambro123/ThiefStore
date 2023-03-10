@@ -32,3 +32,10 @@
 .smart-items img{
     height: 45vh;
 }
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .smart-items{
+        width: 100%;
+    }
+}
