@@ -1,11 +1,18 @@
 
 export const reducer = (state,action)=>{
+    console.log(state.task)
     switch(action.type){
         case 'addTask':
-            return {
+            return {    
+                ...state,
                 task:[...state.task,action.payload],
                 count:state.count+1,
                 total:state.total+(+action.price)
+            }
+        case 'addProduct':
+            return {
+                ...state,
+                view:action.payload
             }
             case 'removeTask':
                 return {

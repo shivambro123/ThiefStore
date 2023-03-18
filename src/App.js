@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Button from '@mui/material/Button';
 import AppBarComp from './Component/AppBar/AppBarComp';
@@ -12,6 +12,9 @@ import NaturalComp from './Component/Natural/NaturalComp';
 import Grocery from './Component/Grocery/Grocery';
 import Cart from './Component/Cart/Cart';
 import View from './Component/ViewData/View';
+import LoginComp from './Component/Login/LoginComp';
+import ProtectedRoute from './Component/Auth/ProtectedRoute';
+import PublicRoute from './Component/Auth/PublicRoute';
 function App() {
   console.log('hh ')
   return (
@@ -20,14 +23,16 @@ function App() {
       <Router>
       <AppBarComp/>
         <Routes>
-          <Route path='/' element={ <MainPage/>}/>
-          <Route path='/ThiefStore' element={<MainPage/>}/>
-          <Route path="/smartphones" element={<Men/>}/>
-          <Route path="/laptop" element={<Women/>}/>
-          <Route path="/natural" element={<NaturalComp/>}/>
-          <Route path="/grocery" element={<Grocery/>}/>
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path="/view" element={<View/>}/>
+          <Route path="/" element={<ProtectedRoute><LoginComp/></ProtectedRoute> }/>
+          <Route path='/mainpage' element={<PublicRoute><MainPage/></PublicRoute>}/>
+          <Route path='/ThiefStore' element={<ProtectedRoute><MainPage/></ProtectedRoute>}/>
+          <Route path="/smartphones" element={<ProtectedRoute><Men/></ProtectedRoute>}/>
+          <Route path="/laptop" element={<ProtectedRoute><Women/></ProtectedRoute>}/>
+          <Route path="/natural" element={<ProtectedRoute><NaturalComp/></ProtectedRoute>}/>
+          <Route path="/grocery" element={<ProtectedRoute><Grocery/></ProtectedRoute>}/>
+          <Route path="/cart" element={<ProtectedRoute><Cart/></ProtectedRoute>}/>
+          <Route path="/view" element={<ProtectedRoute><View/></ProtectedRoute>}/>
+          <Route path="/login" element={<PublicRoute><LoginComp/></PublicRoute>}/>
     </Routes>
     </Router>
     </ContextComp>  

@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useContext } from 'react'
 import Button from '@mui/material/Button';
 import { DataContext } from '../AppBar/Context/ContextComp'
 import Carousel from 'react-bootstrap/Carousel';
 import './Viewcss.css'
 
-const View = ({product}) => {
+const View = ({product,task}) => {
     const {state,dispatch}=useContext(DataContext)
-    console.log(state.count)
-    console.log(state.view)
-    console.log(product)
-    console.log(state.view.images)
-    
+    console.log(state)
+
+
+    const [click,setClick]=useState(true)
     return (
     <>
       <div className='view'>
@@ -47,7 +46,7 @@ const View = ({product}) => {
 
    </div>
 
-   <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:state.view})}}>Add To Cart</Button>
+   <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:state.view,price:state.view.price});console.log(state.view)}}>{(click)? 'Add To Cart' : 'Addded' }</Button>
 
     </div>
     </>

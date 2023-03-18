@@ -13,14 +13,19 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
+import profile_pic from '../Image/profile_pic.jpeg'
+import { NavLink } from 'react-router-dom';
+
 import './AppBarCompcss.css'
 
 
 const pages = ['SMARTPHONES', 'LAPTOP', 'NATURAL','GROCERY','CART'];
-const settings = ['Cart', 'Account', 'Logout'];
+const settings = [  'Logout'];
 
 
 const AppBarComp = () => {
+  const [auth,setAuth]=React.useState(localStorage.getItem('token'))
+  console.log(auth)
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate=useNavigate();
@@ -38,8 +43,12 @@ const AppBarComp = () => {
   };
 
   const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+      localStorage.removeItem('token')
+      navigate('/login')
   };
+  const blurHandle = () =>{
+      
+  }
 
   return (
     <>
@@ -56,7 +65,7 @@ const AppBarComp = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/mainpage"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -138,7 +147,7 @@ const AppBarComp = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+               {auth ?<Avatar alt="Remy Sharp" src={profile_pic} /> : <NavLink to="/login" className="nav-link">Login</NavLink>}
               </IconButton>
             </Tooltip>
             <Menu
@@ -158,8 +167,8 @@ const AppBarComp = () => {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                <MenuItem key={setting} onClick={handleCloseUserMenu} onBlur={blurHandle}>
+                  <Typography textAlign="center"><NavLink to="/login">{setting}</NavLink></Typography>
                 </MenuItem>
               ))}
             </Menu>
