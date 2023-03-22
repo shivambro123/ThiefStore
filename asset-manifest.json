@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ThiefStore/static/css/main.cd5f90f2.css",
-    "main.js": "/ThiefStore/static/js/main.9f119d4e.js",
-    "static/js/512.415019f0.chunk.js": "/ThiefStore/static/js/512.415019f0.chunk.js",
+    "main.css": "/ThiefStore/static/css/main.c5d0f52f.css",
+    "main.js": "/ThiefStore/static/js/main.27a2fcfc.js",
+    "static/js/787.dcc73137.chunk.js": "/ThiefStore/static/js/787.dcc73137.chunk.js",
     "static/media/profile_pic.jpeg": "/ThiefStore/static/media/profile_pic.a256c0eaa66242c5f357.jpeg",
     "index.html": "/ThiefStore/index.html",
-    "main.cd5f90f2.css.map": "/ThiefStore/static/css/main.cd5f90f2.css.map",
-    "main.9f119d4e.js.map": "/ThiefStore/static/js/main.9f119d4e.js.map",
-    "512.415019f0.chunk.js.map": "/ThiefStore/static/js/512.415019f0.chunk.js.map"
+    "main.c5d0f52f.css.map": "/ThiefStore/static/css/main.c5d0f52f.css.map",
+    "main.27a2fcfc.js.map": "/ThiefStore/static/js/main.27a2fcfc.js.map",
+    "787.dcc73137.chunk.js.map": "/ThiefStore/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5f90f2.css",
-    "static/js/main.9f119d4e.js"
+    "static/css/main.c5d0f52f.css",
+    "static/js/main.27a2fcfc.js"
   ]
 }
