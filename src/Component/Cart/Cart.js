@@ -17,6 +17,7 @@ const Cart = ({product}) => {
        <div className='cart-wrapper'>
        {state.task.map((val,ind)=>{
         return (
+         
             <div className='item-div'>
             <div className='item'>
                 <img
@@ -27,6 +28,7 @@ const Cart = ({product}) => {
             <div className='info'>
                <div>Title:{val.title} <br/></div> 
                <div>Price:{val.price} &#8377;</div>
+               <div>Quantity:<button>-</button><p>{}</p><button>+</button></div>
             </div>
             <Button variant="contained" size="medium" onClick={()=>{dispatch({type:'removeTask',payload:product,index:ind,price:val.price})}}>Remove</Button>
             </div>

@@ -30,9 +30,11 @@ function App() {
           <Route path="/laptop" element={<ProtectedRoute><Women/></ProtectedRoute>}/>
           <Route path="/natural" element={<ProtectedRoute><NaturalComp/></ProtectedRoute>}/>
           <Route path="/grocery" element={<ProtectedRoute><Grocery/></ProtectedRoute>}/>
+          <Route path="/products/:id" element={<View/>}/>
           <Route path="/cart" element={<ProtectedRoute><Cart/></ProtectedRoute>}/>
           <Route path="/view" element={<ProtectedRoute><View/></ProtectedRoute>}/>
           <Route path="/login" element={<PublicRoute><LoginComp/></PublicRoute>}/>
+        
     </Routes>
     </Router>
     </ContextComp>  

@@ -66,7 +66,7 @@ const Women = () => {
             })
             .map((val)=>{
                 return (
-                    <Item src={val.thumbnail} title={val.title} price={val.price} product={val}/>
+                    <Item src={val.thumbnail} title={val.title} price={val.price} quantity={val.quantity} product={val}/>
                 )
             })
         }

@@ -58,9 +58,9 @@ const Men = () => {
                     return 1;
                 }
             })
-            .map((val)=>{
+            .map((val,id)=>{
                 return (
-                    <Item src={val.thumbnail} title={val.title} price={val.price} product={val}/>
+                    <Item src={val.thumbnail} title={val.title} price={val.price}  quantity={id}product={val}/>
                 )
             })
         }

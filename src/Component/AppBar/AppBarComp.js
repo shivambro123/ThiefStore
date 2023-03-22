@@ -15,7 +15,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
 import profile_pic from '../Image/profile_pic.jpeg'
 import { NavLink } from 'react-router-dom';
-
+import { useContext } from 'react';
+import { DataContext } from './Context/ContextComp';
 import './AppBarCompcss.css'
 
 
@@ -25,7 +26,9 @@ const settings = [  'Logout'];
 
 const AppBarComp = () => {
   const [auth,setAuth]=React.useState(localStorage.getItem('token'))
+  const {state,dispatch}=useContext(DataContext)
   console.log(auth)
+  console.log(state.count)
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const navigate=useNavigate();
@@ -47,7 +50,7 @@ const AppBarComp = () => {
       navigate('/login')
   };
   const blurHandle = () =>{
-      
+
   }
 
   return (
@@ -109,9 +112,9 @@ const AppBarComp = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+                  <Typography textAlign="center">{page} </Typography>
+                </MenuItem> 
+              ))}  
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -130,7 +133,7 @@ const AppBarComp = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            ThiefStore
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -139,11 +142,11 @@ const AppBarComp = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-                {page}
+                {page} 
               </Button>
-            ))}
+            ))} {state.count}
           </Box>
-
+         
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

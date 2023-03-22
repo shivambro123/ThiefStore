@@ -10,7 +10,7 @@ const ContextComp = ({children}) => {
         task:[],
         total:0,
         view:{}
-    }
+}   
     
     const [store,setStore]=useState([])
     useEffect(()=>{
