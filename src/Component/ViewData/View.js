@@ -8,7 +8,9 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const View = () => {
-    const [proview,setProductview]=useState({})
+  const {state,dispatch}=useContext(DataContext)
+    const [proview,setProductview]=useState({
+    })
     const {id}=useParams();
     console.log(id)
   console.log(proview.images)
@@ -23,7 +25,7 @@ const View = () => {
          <div className='view-item'>
      <Carousel variant="dark">
    
-      {
+      {/* {
         proview.images.map((val)=>{
             return  (<Carousel.Item>
             <img
@@ -36,7 +38,7 @@ const View = () => {
           </Carousel.Item>)
 
         })
-      }
+      } */}
     
   </Carousel>
     </div>
@@ -52,7 +54,7 @@ const View = () => {
 
    </div>
 
-   <Button variant="contained" size="small">click</Button>
+   <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:proview,price:proview.price})}}>click</Button>
 
     </div>
     </>

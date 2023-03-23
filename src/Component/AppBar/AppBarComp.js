@@ -144,13 +144,13 @@ const AppBarComp = () => {
               >
                 {page} 
               </Button>
-            ))} {state.count}
+            ))} 
           </Box>
          
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-               {auth ?<Avatar alt="Remy Sharp" src={profile_pic} /> : <NavLink to="/login" className="nav-link">Login</NavLink>}
+             <Avatar alt="Remy Sharp" src={profile_pic} /> 
               </IconButton>
             </Tooltip>
             <Menu

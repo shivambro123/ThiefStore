@@ -17,14 +17,14 @@ const Item = ({src,title,price,product,quantity}) => {
     // }
   return (  
     <>
-    <Link to={`/products/${product.id}`} style={{width:'24%',margin:'auto'}}>
         <div className='item-div'>
+         <Link to={`/products/${product.id}`} className="linkdiv">
         <div className='item'>
             <img
             src={src}
             className="images"
             alt="alt"/> 
-        </div>
+        </div></Link>
         <div className='info'>
            <div>Title:{title} <br/></div> 
            <div>Price:{price}&#8377;</div>
@@ -32,7 +32,7 @@ const Item = ({src,title,price,product,quantity}) => {
         </div>
         <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:product,price:price})}}>Add To Cart</Button>
         </div>
-        </Link>
+        
     </>
   )
 }

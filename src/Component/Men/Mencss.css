@@ -9,7 +9,7 @@
 .filter-div{
     height: 10vh;
     width: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     justify-content: center;
     align-items: center;

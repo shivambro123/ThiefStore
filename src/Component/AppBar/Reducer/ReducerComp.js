@@ -9,6 +9,12 @@ export const reducer = (state,action)=>{
                 count:state.count+1,
                 total:state.total+(+action.price)
             }
+
+        case 'addCart':{
+            return{
+                
+            }
+        }
         case 'addProduct':
             return {
                 ...state,

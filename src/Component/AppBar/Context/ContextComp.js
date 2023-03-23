@@ -9,7 +9,7 @@ const ContextComp = ({children}) => {
         count:0,
         task:[],
         total:0,
-        view:{}
+    
 }   
     
     const [store,setStore]=useState([])

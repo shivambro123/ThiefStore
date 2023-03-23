@@ -8,7 +8,6 @@ const Cart = ({product}) => {
     const {state,dispatch}=useContext(DataContext)
     console.log(state.count)
     console.log(state.task)
-    console.log(state.task)
     console.log(state.total)
     
     return (
@@ -28,7 +27,7 @@ const Cart = ({product}) => {
             <div className='info'>
                <div>Title:{val.title} <br/></div> 
                <div>Price:{val.price} &#8377;</div>
-               <div>Quantity:<button>-</button><p>{}</p><button>+</button></div>
+               {/* <div>Quantity:<button>-</button><p>{product}</p><button>+</button></div> */}
             </div>
             <Button variant="contained" size="medium" onClick={()=>{dispatch({type:'removeTask',payload:product,index:ind,price:val.price})}}>Remove</Button>
             </div>
