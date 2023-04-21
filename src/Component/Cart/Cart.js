@@ -17,7 +17,7 @@ const Cart = ({product}) => {
        {state.task.map((val,ind)=>{
         return (
          
-            <div className='item-div'>
+            <div className='items-div'>
             <div className='item'>
                 <img
                 src={val.thumbnail}

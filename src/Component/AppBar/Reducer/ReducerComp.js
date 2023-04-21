@@ -32,7 +32,6 @@ export const reducer = (state,action)=>{
             case 'viewData':
                 return{
                     view:action.data,
-                    
                 }
                
         default:

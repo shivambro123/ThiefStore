@@ -15,23 +15,30 @@ const Item = ({src,title,price,product,quantity}) => {
     //   dispatch({type:'viewData',data:product})
     //   navigate('/view')
     // }
+    const addcart = (e,product) =>{
+      e.preventDefault();
+      dispatch({type:'addTask',payload:product})
+    
+    }
   return (  
     <>
-        <div className='item-div'>
+       
          <Link to={`/products/${product.id}`} className="linkdiv">
+         <div className='item-div'>
         <div className='item'>
             <img
             src={src}
             className="images"
             alt="alt"/> 
-        </div></Link>
+        </div>
         <div className='info'>
            <div>Title:{title} <br/></div> 
            <div>Price:{price}&#8377;</div>
             
         </div>
-        <Button variant="contained" size="small" onClick={()=>{dispatch({type:'addTask',payload:product,price:price})}}>Add To Cart</Button>
+        <Button variant="contained" size="small" onClick={(e)=>{addcart(e,product)}}>Add To Cart</Button>
         </div>
+        </Link>
         
     </>
   )

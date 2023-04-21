@@ -1,7 +1,7 @@
 .item-div{
     height: 54vh;
     width: 100%;
-    max-width: 24%;
+    /* max-width: 24%; */
     margin: 10px auto;  
     background-color: rgb(246, 241, 235);
     border-radius: 12px;

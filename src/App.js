@@ -15,6 +15,7 @@ import View from './Component/ViewData/View';
 import LoginComp from './Component/Login/LoginComp';
 import ProtectedRoute from './Component/Auth/ProtectedRoute';
 import PublicRoute from './Component/Auth/PublicRoute';
+import NewCart from './Component/Cart/NewCart';
 function App() {
   console.log('hh ')
   return (

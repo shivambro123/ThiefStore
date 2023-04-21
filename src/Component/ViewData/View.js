@@ -21,7 +21,7 @@ const View = () => {
     },[])
     return (  
     <>
-      <div className='view'>
+      <div className='view'>    
          <div className='view-item'>
      <Carousel variant="dark">
    
@@ -38,7 +38,7 @@ const View = () => {
           </Carousel.Item>)
 
         })
-      } */}
+      }        */}
     
   </Carousel>
     </div>

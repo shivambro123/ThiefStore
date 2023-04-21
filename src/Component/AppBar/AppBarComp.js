@@ -129,7 +129,7 @@ const AppBarComp = () => {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.2rem',
+              letterSpacing: '.01rem',
               textDecoration: 'none',
             }}
           >
