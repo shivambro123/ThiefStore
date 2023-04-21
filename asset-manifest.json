@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ThiefStore/static/css/main.c5d0f52f.css",
-    "main.js": "/ThiefStore/static/js/main.27a2fcfc.js",
+    "main.css": "/ThiefStore/static/css/main.0c2a4c20.css",
+    "main.js": "/ThiefStore/static/js/main.8b363102.js",
     "static/js/787.dcc73137.chunk.js": "/ThiefStore/static/js/787.dcc73137.chunk.js",
     "static/media/profile_pic.jpeg": "/ThiefStore/static/media/profile_pic.a256c0eaa66242c5f357.jpeg",
     "index.html": "/ThiefStore/index.html",
-    "main.c5d0f52f.css.map": "/ThiefStore/static/css/main.c5d0f52f.css.map",
-    "main.27a2fcfc.js.map": "/ThiefStore/static/js/main.27a2fcfc.js.map",
+    "main.0c2a4c20.css.map": "/ThiefStore/static/css/main.0c2a4c20.css.map",
+    "main.8b363102.js.map": "/ThiefStore/static/js/main.8b363102.js.map",
     "787.dcc73137.chunk.js.map": "/ThiefStore/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5d0f52f.css",
-    "static/js/main.27a2fcfc.js"
+    "static/css/main.0c2a4c20.css",
+    "static/js/main.8b363102.js"
   ]
 }
